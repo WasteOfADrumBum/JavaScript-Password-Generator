@@ -14,7 +14,7 @@ var specialCharacter = "!#$%&'()*+,-./:;?@][^_`{|}~'<=>";
 var userPassword = "";
 var passwordGroup = "";
 
-// Assignment Code
+// GenerateBtn
 var generateBtn = document.querySelector("#generate");
 
 // Function writes password to the #password input
@@ -79,6 +79,7 @@ function generatePassword() {
 
 /* || COPY FUNCTION || */
 
+// https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
 var copy = document.querySelector("#copy");
 copy.addEventListener("click", function () {
   copyPassword();
