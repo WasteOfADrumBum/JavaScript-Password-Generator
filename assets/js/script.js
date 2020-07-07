@@ -17,13 +17,6 @@ var specialCharacter = "!#$%&'()*+,-./:;?@][^_`{|}~'<=>";
 var userPassword = "";
 var passwordGroup = "";
 
-// Function writes password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-  passwordText.value = password;
-}
-
 // Request length of the password
 var plength = parseInt(prompt("Welcome to Password Generator 2020. To begin, please enter a length of your password from 8-128.",""));
 
@@ -72,6 +65,13 @@ function generatePassword() {
     );
   }
   return userPassword;
+}
+
+// Function writes password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+  passwordText.value = password;
 }
 
 // Event Listener
