@@ -1,22 +1,6 @@
 // GenerateBtn
 var generateBtn = document.querySelector("#generate");
 
-// Define variables
-var selectLowerCase;
-var selectUpperCase;
-var selectNumber;
-var selectSpecial;
-
-// Set variables  
-var plength = 0;
-var lowerCase = "abcdefghijklmnopqrstuvwxyz";
-// Uppercase conversion
-var upperCase = lowerCase.toUpperCase();
-var numbers = "1234567890";
-var specialCharacter = "!#$%&'()*+,-./:;?@][^_`{|}~'<=>";
-var userPassword = "";
-var passwordGroup = "";
-
 // Call function to generate password 
 /* generatePassword(); */
 
@@ -25,6 +9,23 @@ var passwordGroup = "";
 
 // From selected options randomly generate password.
 function generatePassword() {
+    // Define variables
+  var selectLowerCase;
+  var selectUpperCase;
+  var selectNumber;
+  var selectSpecial;
+
+  // Set variables  
+  var plength = 0;
+  var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+  // Uppercase conversion
+  var upperCase = lowerCase.toUpperCase();
+  var numbers = "1234567890";
+  var specialCharacter = "!#$%&'()*+,-./:;?@][^_`{|}~'<=>";
+  var userPassword = "";
+  var passwordGroup = "";
+
+  // Clear Text
   var passwordText = document.querySelector("#password");
   if (passwordText.value) {
     passwordText.value = "";
@@ -74,10 +75,10 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
-  selectLowerCase=null;
+  /* selectLowerCase=null;
   selectUpperCase=null;
   selectNumber=null;
-  selectSpecial=null;
+  selectSpecial=null; */
 }
 
 // Event Listener
