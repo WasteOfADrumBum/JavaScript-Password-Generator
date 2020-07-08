@@ -1,12 +1,6 @@
 // GenerateBtn
 var generateBtn = document.querySelector("#generate");
 
-// Call function to generate password 
-/* generatePassword(); */
-
-// Write generated password on page
-/* document.getElementById("password").innerHTML = userPassword;  */
-
 // From selected options randomly generate password.
 function generatePassword() {
     // Define variables
@@ -25,11 +19,6 @@ function generatePassword() {
   var userPassword = "";
   var passwordGroup = "";
 
-  // Clear Text
-  var passwordText = document.querySelector("#password");
-  if (passwordText.value) {
-    passwordText.value = "";
-  }
   // Request length of the password
   var plength = parseInt(prompt("Welcome to Password Generator 2020. To begin, please enter a length of your password from 8-128.",""));
   // Require number
@@ -75,10 +64,6 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
-  /* selectLowerCase=null;
-  selectUpperCase=null;
-  selectNumber=null;
-  selectSpecial=null; */
 }
 
 // Event Listener
