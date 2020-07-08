@@ -3,7 +3,9 @@ var generateBtn = document.querySelector("#generate");
 
 // From selected options randomly generate password.
 function generatePassword() {
-    // Define variables
+  // Defined and set variable inside of function in order to clear text area and prevent stops
+  
+  // Define variables
   var selectLowerCase;
   var selectUpperCase;
   var selectNumber;
